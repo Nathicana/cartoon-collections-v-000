@@ -22,7 +22,7 @@ def find_the_cheese(snacks)
   
   
  
-snacks.include?(cheese_types)
+snacks.find(cheese_types)
 
 
 end
