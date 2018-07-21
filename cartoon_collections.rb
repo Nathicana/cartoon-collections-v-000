@@ -22,7 +22,8 @@ def find_the_cheese(snacks)
   
   
  
-snacks.find(cheese_types)
+if snacks.include?(cheese_types)
+  return cheese_types
 
 
 end
