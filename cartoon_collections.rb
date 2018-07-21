@@ -21,8 +21,11 @@ def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
   
   
- snacks.collect{|i| i.include? cheese_types} 
+ snacks.select{|snack| .include? cheese_types} 
 
-
+valid_colors = ['red', 'green', 'blue']
+ cars = [{type: 'porsche', color: 'red'}, {type: 'mustang', color: 'orange'}, {type: 'prius', color: 'blue'}]
+ cars.select{ |car| valid_colors.include?(car[:color]) }.map{ |car| car[:type]}
+=> ["porsche", "prius"]
 
 end
