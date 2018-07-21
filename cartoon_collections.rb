@@ -21,7 +21,7 @@ def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
   
   
- snacks.map{|snack| cheese_types.include?(snack)
+ snacks.map{|snack| cheese_types.include?(snack)}
 
 
 end
